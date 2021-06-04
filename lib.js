@@ -86,6 +86,7 @@ function tableSummary(values, chartValues) {
             markup += "<td>" + displayValues[row][col] + "</td>";
         }
         markup += '</tr>';
+        // add context
         tableBody.append(markup);
     }
 }
@@ -93,24 +94,27 @@ function tableSummary(values, chartValues) {
 
 function chart() {
     const checked = $('input[type=radio]:checked');
+    let markup = '';
     if (checked.length == 50) {
-        // clean errors
-        $('#errors').html("");
         // get checked values
         const values = getValues();
         // get fixed values for chart
         const chartValues = computeChartValues([...values]);
         // fill table summary
         tableSummary(values, chartValues);
+        markup = '<div class="alert alert-info"><p>' +
+            'Cálculo de Puntuación Directa Ponderada (PPD %) reflejada en la gráfica:</p>' +
+            '<p>Puntuación Directa Obtenida (PDO) / Puntuación Directa Máxima (PDM) x 100</p></div>';
         // make bar chart
         makeChart(chartValues);
     } else {
         checked.parent().parent().addClass("table-success");
-        const unchecked = 50 - checked.length; 
-        $('#errors').html('<div class="alert alert-warning" role="alert">Falta ' +
+        const unchecked = 50 - checked.length;
+        markup = '<div class="alert alert-warning" role="alert">Falta ' +
             unchecked + (unchecked === 1 ? ' pregunta' : ' preguntas') +
-            ' por contestar.</div>');
+            ' por contestar.</div>';
     }
+    $('#messages').html(markup);
 };
 
 
@@ -202,7 +206,7 @@ function makeChart(values) {
 function testing(number) {
     const radioInputs = $('input[type=radio]');
     for (radio of radioInputs) {
-        if (radio.id == number ) {
+        if (radio.id == number) {
             radio.checked = true;
         }
     }

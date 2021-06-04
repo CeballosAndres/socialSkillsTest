@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <div class="table-responsive">
+        <div class="table-responsive my-3">
             <table class="table table-striped align-middle">
                 <thead>
                     <th scope="col">#</th>
@@ -66,35 +66,38 @@
             </table>
         </div>
 
-        <div class="row">
+        <div class="row my-3">
             <div class="col text-center">
                 <button onclick="chart()" type="button" class="btn btn-primary">Graficar</button>
             </div>
             <div class="col text-center">
-                <button type="button" class="btn btn-info" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                      </svg></button>
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-info-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg>
+                </button>
             </div>
-            <div class="col text-center">
+            <!-- <div class="col text-center">
                 <button onclick="testing(4)" type="button" class="btn btn-secondary">Test</button>
-            </div>
+            </div> -->
         </div>
 
         <!-- Table for results -->
-        <div class="table-responsive">
-            <table class="table table-striped">
+        <div class="table-responsive my-3">
+            <table class="table table-striped text-center">
                 <thead id="tableHead"></thead>
                 <tbody id="tableBody"></tbody>
             </table>
         </div>
 
-        <!-- Erros -->
-        <div id="errors"></div>
+        <!-- messages -->
+        <div id="messages" class="row my-3"></div>
 
         <!-- Div for display chart -->
-        <div id="chart"></div>
+        <div id="chart" class="row my-3"></div>
     </div>
 
 
@@ -163,66 +166,66 @@
                 <div class="modal-body">
                     <p><strong>GRUPO I.</strong> PRIMERAS HABILIDADES SOCIALES.</p>
                     <ol>
-                    <li>Escuchar.</li>
-                    <li>Iniciar una conversación.</li>
-                    <li>Mantener una conversación.</li>
-                    <li>Formular una pregunta.</li>
-                    <li>Dar las gracias.</li>
-                    <li>Presentarse.</li>
-                    <li>Presentar a otras personas.</li>
-                    <li>Hacer un cumplido.</li>
-                    <br>
-                    <p><strong>GRUPO II.</strong> HABILIDADES SOCIALES AVANZADAS.
-                    <li>Pedir ayuda.</li>
-                    <li>Participar.</li>
-                    <li>Dar instrucciones.</li>
-                    <li>Seguir instrucciones.</li>
-                    <li>Disculparse.</li>
-                    <li>Convencer a los demás.</li>
-                    <br>
-                    <p><strong>GRUPO III.</strong> HABILIDADES RELACIONADAS CON LOS SENTIMIENTOS.
-                    <li>Conocer los propios sentimientos.</li>
-                    <li>Expresar los sentimientos.</li>
-                    <li>Comprender los sentimientos de los demás.</li>
-                    <li>Enfrentarse con el enfado de otro.</li>
-                    <li>Expresar afecto.</li>
-                    <li>Resolver el miedo.</li>
-                    <li>Autorrecompensarse.</li>
-                    <br>
-                    <p><strong>GRUPO IV.</strong> HABILIDADES ALTERNATIVAS A LA AGRESIÓN.
-                    <li>Pedir permiso.</li>
-                    <li>Compartir algo.</li>
-                    <li>Ayudar a los demás.</li>
-                    <li>Negociar.</li>
-                    <li>Empezar el autocontrol.</li>
-                    <li>Defender los propios derechos.</li>
-                    <li>Responder a las bromas.</li>
-                    <li>Evitar los problemas con los demás.</li>
-                    <li>No entrar en peleas.</li>
-                    <br>
-                    <p><strong>GRUPO V.</strong> HABILIDADES PARA HACER FRENTE AL ESTRÉS.
-                    <li>Formular una queja.</li>
-                    <li>Responder a una queja.</li>
-                    <li>Demostrar deportividad después de un juego.</li>
-                    <li>Resolver la vergüenza.</li>
-                    <li>Arreglárselas cuando le dejan de lado.</li>
-                    <li>Defender a un amigo.</li>
-                    <li>Responder a la persuasión.</li>
-                    <li>Responder al fracaso.</li>
-                    <li>Enfrentarse a los mensajes contradictorios.</li>
-                    <li>Responder a una acusación.</li>
-                    <li>Prepararse para una conversación difícil.</li>
-                    <li>Hacer frente a las presiones del grupo.</li>
-                    <br>
-                    <p><strong>GRUPO VI.</strong> HABILIDADES DE PLANIFICACIÓN.
-                    <li>Tomar iniciativas.</li>
-                    <li>Discernir sobre la causa de un problema.</li>
-                    <li>Establecer un objetivo.</li>
-                    <li>Determinar las propias habilidades.</li>
-                    <li>Recoger información.</li>
-                    <li>Resolver los problemas según su importancia.</li>
-                    <li>Tomar una decisión.</li>
-                    <li>Concentrarse en una tarea.</li>           
+                        <li>Escuchar.</li>
+                        <li>Iniciar una conversación.</li>
+                        <li>Mantener una conversación.</li>
+                        <li>Formular una pregunta.</li>
+                        <li>Dar las gracias.</li>
+                        <li>Presentarse.</li>
+                        <li>Presentar a otras personas.</li>
+                        <li>Hacer un cumplido.</li>
+                        <br>
+                        <p><strong>GRUPO II.</strong> HABILIDADES SOCIALES AVANZADAS.
+                            <li>Pedir ayuda.</li>
+                            <li>Participar.</li>
+                            <li>Dar instrucciones.</li>
+                            <li>Seguir instrucciones.</li>
+                            <li>Disculparse.</li>
+                            <li>Convencer a los demás.</li>
+                            <br>
+                        <p><strong>GRUPO III.</strong> HABILIDADES RELACIONADAS CON LOS SENTIMIENTOS.
+                            <li>Conocer los propios sentimientos.</li>
+                            <li>Expresar los sentimientos.</li>
+                            <li>Comprender los sentimientos de los demás.</li>
+                            <li>Enfrentarse con el enfado de otro.</li>
+                            <li>Expresar afecto.</li>
+                            <li>Resolver el miedo.</li>
+                            <li>Autorrecompensarse.</li>
+                            <br>
+                        <p><strong>GRUPO IV.</strong> HABILIDADES ALTERNATIVAS A LA AGRESIÓN.
+                            <li>Pedir permiso.</li>
+                            <li>Compartir algo.</li>
+                            <li>Ayudar a los demás.</li>
+                            <li>Negociar.</li>
+                            <li>Empezar el autocontrol.</li>
+                            <li>Defender los propios derechos.</li>
+                            <li>Responder a las bromas.</li>
+                            <li>Evitar los problemas con los demás.</li>
+                            <li>No entrar en peleas.</li>
+                            <br>
+                        <p><strong>GRUPO V.</strong> HABILIDADES PARA HACER FRENTE AL ESTRÉS.
+                            <li>Formular una queja.</li>
+                            <li>Responder a una queja.</li>
+                            <li>Demostrar deportividad después de un juego.</li>
+                            <li>Resolver la vergüenza.</li>
+                            <li>Arreglárselas cuando le dejan de lado.</li>
+                            <li>Defender a un amigo.</li>
+                            <li>Responder a la persuasión.</li>
+                            <li>Responder al fracaso.</li>
+                            <li>Enfrentarse a los mensajes contradictorios.</li>
+                            <li>Responder a una acusación.</li>
+                            <li>Prepararse para una conversación difícil.</li>
+                            <li>Hacer frente a las presiones del grupo.</li>
+                            <br>
+                        <p><strong>GRUPO VI.</strong> HABILIDADES DE PLANIFICACIÓN.
+                            <li>Tomar iniciativas.</li>
+                            <li>Discernir sobre la causa de un problema.</li>
+                            <li>Establecer un objetivo.</li>
+                            <li>Determinar las propias habilidades.</li>
+                            <li>Recoger información.</li>
+                            <li>Resolver los problemas según su importancia.</li>
+                            <li>Tomar una decisión.</li>
+                            <li>Concentrarse en una tarea.</li>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
